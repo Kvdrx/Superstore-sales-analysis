@@ -1,0 +1,22 @@
+# Python
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Local database
+*.db
+*.sqlite
+*.sqlite3
+
+# Power BI temporary files
+*.pbit.lock
+*.pbix.lock
+
+# Dataset (if redistribution is not permitted)
+data/*.csv
+
+# System files
+.DS_Store
+Thumbs.db
