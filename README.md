@@ -1,46 +1,76 @@
-# Analyse des ventes — Superstore
+# Superstore Sales Analysis
 
-Projet personnel d'analyse de données réalisé avec **Python, SQL et Power BI**. L'objectif est de suivre les ventes, les bénéfices et la rentabilité des différentes catégories de produits.
+### Analyse des performances commerciales avec Python, SQL et Power BI
+
+## Présentation
+
+Ce projet explore les données de ventes d'un commerce de détail afin de comprendre les performances commerciales, identifier les tendances et faciliter la prise de décision.
+
+L'analyse s'appuie sur trois outils complémentaires :
+
+- **Python :** préparation, nettoyage et exploration des données.
+- **SQL :** interrogation des données et calcul des indicateurs commerciaux.
+- **Power BI :** création d'un tableau de bord interactif.
+
+## Objectifs
+
+- Analyser l'évolution des ventes et des bénéfices.
+- Étudier les performances par catégorie de produits.
+- Comparer les résultats entre différentes régions.
+- Identifier les segments commerciaux les plus performants.
+- Présenter les principaux indicateurs dans un tableau de bord clair.
+
+## Technologies utilisées
+
+| Technologie | Utilisation |
+|---|---|
+| Python | Préparation et exploration des données |
+| Pandas | Manipulation et nettoyage |
+| SQL | Requêtes et analyse des indicateurs |
+| Power BI | Visualisation et reporting |
+| Jupyter Notebook | Documentation des analyses |
+
+## Méthodologie
+
+### 1. Préparation des données
+
+Importer les données Superstore, examiner leur structure et effectuer les opérations de nettoyage nécessaires à l'analyse.
+
+### 2. Analyse avec SQL
+
+Utiliser des requêtes SQL pour calculer et comparer les indicateurs de ventes, de bénéfices et de performance commerciale.
+
+### 3. Visualisation avec Power BI
+
+Construire un tableau de bord permettant d'explorer les performances globales et de comparer les résultats par période, région et catégorie.
 
 ## Tableau de bord
 
+Le tableau de bord Power BI permet de consulter les principaux indicateurs commerciaux et de visualiser les tendances observées.
+
 ![Dashboard Superstore](images/Dashboard.png)
 
-Le rapport Power BI présente les principaux KPI, l'évolution des ventes, les résultats par catégorie et par région, ainsi que des filtres interactifs.
+## Résultats
 
-## Outils utilisés
+L'analyse porte notamment sur :
 
-- **Python (pandas, Matplotlib)** : vérification des données, conversion des dates et des types numériques, calcul des KPI et analyse mensuelle.
-- **SQLite / SQL** : analyses des ventes, des bénéfices et des catégories à partir de la table `orders`.
-- **Power BI** : création du tableau de bord.
+- Le chiffre d'affaires total.
+- Les bénéfices et la marge bénéficiaire.
+- Le nombre de commandes.
+- Les performances des catégories et des régions.
+- L'évolution des ventes dans le temps.
 
-## Données et préparation
+Les résultats détaillés sont présentés dans les fichiers d'analyse et le tableau de bord du projet.
 
-J'ai utilisé le jeu de données [Sample Superstore](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final), qui contient **9 994 lignes**. Les contrôles effectués dans Python n'ont détecté ni valeur manquante, ni doublon complet, ni anomalie parmi les règles vérifiées. J'ai ensuite exporté les données préparées dans `superstore_cleaned.csv`.
+## Compétences démontrées
 
-## Quelques résultats
+- Préparation et validation de données.
+- Analyse de données commerciales avec SQL.
+- Construction d'indicateurs de performance.
+- Visualisation et présentation des résultats.
+- Documentation d'un projet d'analyse de données.
 
-| Indicateur | Résultat |
-| --- | ---: |
-| Ventes totales | 2 297 200,86 $ |
-| Bénéfice total | 286 397,02 $ |
-| Marge bénéficiaire | 12,47 % |
-| Nombre de commandes | 5 009 |
+## Auteur
 
-**Ce que j'ai retenu :** la catégorie *Technology* génère le bénéfice le plus élevé (environ 145 455 $). *Furniture* réalise des ventes importantes, mais son bénéfice reste bien plus faible (environ 18 451 $). Cela montre l'intérêt de comparer les ventes et la rentabilité.
-
-## Consulter le projet
-
-- [Notebook Python](notebooks/01_sales_analysis.ipynb)
-- [Requêtes SQL](sql/sales_analysis.sql)
-- [Rapport Power BI](powerbi/Superstore_dashboard.pbix)
-
-Pour reproduire l'analyse, téléchargez le CSV depuis la source indiquée, placez-le dans `data/Sample - Superstore.csv`, puis installez les dépendances avec :
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-Exécutez ensuite le notebook dans l'ordre. Il génère le CSV préparé et la base SQLite utilisée pour les analyses SQL. Dans Power BI Desktop, sélectionnez `data/superstore_cleaned.csv` comme source du rapport, puis actualisez les données.
-
-*Le fichier CSV et la base SQLite sont conservés localement et ne sont pas inclus dans le dépôt.*
+**Abdoul Kader Kassa**  
+[GitHub](https://github.com/Kvdrx) | [LinkedIn](https://www.linkedin.com/in/abdoul-kader-kassa/)
